@@ -17,8 +17,8 @@ def create_app(script_info=None):
     db.init_app(app)
 
     # register bluepoint
-    from project.api.users import users_bluepoint
-    app.register_blueprint(users_bluepoint)
+    from project.api.users import users_blueprint
+    app.register_blueprint(users_blueprint)
 
     # shell context for flask cli
     @app.shell_context_processor
